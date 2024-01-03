@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import './app.css';
+import MyFooter from './components/MyFooter';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,7 +10,10 @@ function App() {
   return (
     <>
       <Navbar />
+      <div className='min-h-screen'>
       <Outlet/>
+      </div>
+      <MyFooter />
     </>
   )
 }

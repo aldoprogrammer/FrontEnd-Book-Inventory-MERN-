@@ -41,8 +41,9 @@ const Review = () => {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-            <div>
+        <SwiperSlide className='shadow-2xl bg-white
+        py-8 px-4 md:m-5 rounded-lg border'>
+            <div className='space-y-6'>
                 <div className='text-amber-500 flex
                 gap-2'>
                     <FaStar />
@@ -51,7 +52,7 @@ const Review = () => {
                     <FaStar />
                 </div>
                 {/* text */}
-                <div>
+                <div className='mt-7'>
                     <p className='mb-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus tenetur, maiores at, repellat labore suscipit molestias ipsa dolorum dicta sint iure porro quis corrupti neque. Numquam iste praesentium repellendus rem.</p>
                     <Avatar 
                         img={proPic} 
@@ -64,14 +65,101 @@ const Review = () => {
                 </div>
             </div>
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide className='shadow-2xl bg-white
+        py-8 px-4 md:m-5 rounded-lg border'>
+            <div className='space-y-6'>
+                <div className='text-amber-500 flex
+                gap-2'>
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                </div>
+                {/* text */}
+                <div className='mt-7'>
+                    <p className='mb-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus tenetur, maiores at, repellat labore suscipit molestias ipsa dolorum dicta sint iure porro quis corrupti neque. Numquam iste praesentium repellendus rem.</p>
+                    <Avatar 
+                        img={proPic} 
+                        alt="avatar of Jese" 
+                        rounded 
+                        className='w-10 mb-4'
+                        />
+                        <h5 className='text-lg font-medium'>Mark Ping</h5>
+                        <p className='text-base'>CEO, ABC Company</p>
+                </div>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide className='shadow-2xl bg-white
+        py-8 px-4 md:m-5 rounded-lg border'>
+            <div className='space-y-6'>
+                <div className='text-amber-500 flex
+                gap-2'>
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                </div>
+                {/* text */}
+                <div className='mt-7'>
+                    <p className='mb-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus tenetur, maiores at, repellat labore suscipit molestias ipsa dolorum dicta sint iure porro quis corrupti neque. Numquam iste praesentium repellendus rem.</p>
+                    <Avatar 
+                        img={proPic} 
+                        alt="avatar of Jese" 
+                        rounded 
+                        className='w-10 mb-4'
+                        />
+                        <h5 className='text-lg font-medium'>Mark Ping</h5>
+                        <p className='text-base'>CEO, ABC Company</p>
+                </div>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide className='shadow-2xl bg-white
+        py-8 px-4 md:m-5 rounded-lg border'>
+            <div className='space-y-6'>
+                <div className='text-amber-500 flex
+                gap-2'>
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                </div>
+                {/* text */}
+                <div className='mt-7'>
+                    <p className='mb-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus tenetur, maiores at, repellat labore suscipit molestias ipsa dolorum dicta sint iure porro quis corrupti neque. Numquam iste praesentium repellendus rem.</p>
+                    <Avatar 
+                        img={proPic} 
+                        alt="avatar of Jese" 
+                        rounded 
+                        className='w-10 mb-4'
+                        />
+                        <h5 className='text-lg font-medium'>Mark Ping</h5>
+                        <p className='text-base'>CEO, ABC Company</p>
+                </div>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide className='shadow-2xl bg-white
+        py-8 px-4 md:m-5 rounded-lg border'><div className='space-y-6'>
+                <div className='text-amber-500 flex
+                gap-2'>
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                </div>
+                {/* text */}
+                <div className='mt-7'>
+                    <p className='mb-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus tenetur, maiores at, repellat labore suscipit molestias ipsa dolorum dicta sint iure porro quis corrupti neque. Numquam iste praesentium repellendus rem.</p>
+                    <Avatar 
+                        img={proPic} 
+                        alt="avatar of Jese" 
+                        rounded 
+                        className='w-10 mb-4'
+                        />
+                        <h5 className='text-lg font-medium'>Mark Ping</h5>
+                        <p className='text-base'>CEO, ABC Company</p>
+                </div>
+            </div>
+        </SwiperSlide>
       </Swiper>
         </div>
     </div>
