@@ -19,10 +19,15 @@ const ManageBook = () => {
     })
     .then(res => res.json())
     .then(data => {
-      alert('Book deleted Successfully')
-      // setAllBooks(data);
+      alert('Book deleted Successfully');
+      window.location.reload(); // Reload the page
     })
+    .catch(error => {
+      console.error('Error deleting the book:', error);
+      // Handle error if needed
+    });
   }
+  
 
   return (
     <div className='px-4 my-12'>

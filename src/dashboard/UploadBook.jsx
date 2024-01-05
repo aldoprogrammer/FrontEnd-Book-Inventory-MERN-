@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Checkbox, Label, Select, TextInput, Textarea } from 'flowbite-react';
+import { useNavigate } from 'react-router-dom';
 
 const UploadBook = () => {
   const bookCategories = [
@@ -25,7 +26,7 @@ const UploadBook = () => {
   ]
 
   const [selectedBookCategory, setSelectedBookCategory] = useState(bookCategories[0]);
-
+  const navigate = useNavigate();
   const handleChanageSelectedValue = (event) => {
     console.log(event.target.value);
     setSelectedBookCategory(event.target.value);
@@ -65,6 +66,7 @@ const UploadBook = () => {
     .then(data => {
       console.log(data);
       alert('Book uploaded successfully');
+      navigate("/admin/dashboard/manage");
       form.reset();
     })
   }

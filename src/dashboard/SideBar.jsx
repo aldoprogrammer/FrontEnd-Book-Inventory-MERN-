@@ -12,7 +12,7 @@ const SideBar = () => {
        <Sidebar aria-label="Sidebar with content separator example">
        <Sidebar.Logo 
         href="/" 
-        img={user?.photoURL} 
+        img={user?.photoURL || userImg}
         imgAlt="Flowbite logo"
         clasName="w-16 h-16"
         >
@@ -42,9 +42,6 @@ const SideBar = () => {
           </Sidebar.Item>
           <Sidebar.Item href="#" icon={HiShoppingBag}>
             Products
-          </Sidebar.Item>
-          <Sidebar.Item href="/login" icon={HiArrowSmRight}>
-            Sign In
           </Sidebar.Item>
           <Sidebar.Item href="/logout" icon={HiTable}>
             Log Out

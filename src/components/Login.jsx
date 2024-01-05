@@ -13,26 +13,31 @@ const Login = () => {
   const from = location.state?.from?.pathname || '/';
 
   const handleLogIn = (event) => {
-      event.preventDefault();
-      const form = event.target;
-      const email = form.email.value;
-      const password = form.password.value;
-      login(email, password) .then((userCredential) => {
-        // Signed up 
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+  
+    login(email, password)
+      .then((userCredential) => {
+        // Signed in
         const user = userCredential.user;
         alert("LogIn Successfully");
-        navigate(from, {replace: true})
-        // ...
+        navigate(from, { replace: true });
       })
       .catch((error) => {
+        // Handle login errors
         const errorCode = error.code;
         const errorMessage = error.message;
-        // ..
+  
+        if (errorCode === "auth/user-not-found") {
+          setError("You haven't created an account yet. Please sign up.");
+        } else {
+          setError(errorMessage);
+        }
       });
-    
-
-     
-  }
+  };
+  
 
   // sign up with google account
   const handleRegister = () => {

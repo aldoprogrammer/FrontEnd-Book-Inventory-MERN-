@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Button, Checkbox, Label, Select, TextInput, Textarea } from 'flowbite-react';
-import { useLoaderData, useParams } from 'react-router-dom'
+import { useLoaderData, useNavigate, useParams } from 'react-router-dom'
 
 const EditBook = () => {
   const {id} = useParams();
+  const navigate = useNavigate();
   const {
     bookTitle,
     authorName,
@@ -74,6 +75,7 @@ const EditBook = () => {
   .then(res => res.json())
   .then(data => {
     alert("Book updated succesfully")
+    navigate("/admin/dashboard/manage");
   })
 
     
