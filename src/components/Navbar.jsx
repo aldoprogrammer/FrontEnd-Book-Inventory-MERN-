@@ -1,12 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { FaBlog, FaBars } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
+import { AuthContext } from '../contects/AuthProvider';
 
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isSticky, setIsSticky] = useState(false);
+
+    const {user} = useContext(AuthContext)
+    console.log(user);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -62,6 +66,9 @@ const Navbar = () => {
                     <button><FaBars
                         className='w-5 hover:text-blue-700'
                     /></button>
+                    {
+                        user ? user.email : ""
+                    }
                 </div>
 
                 {/* menu btn small devices */}
